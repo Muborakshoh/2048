@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>2048 Game</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>2048</h1>
+        <div class="score-container">
+            <div class="score-box">
+                <span class="score-label">Score:</span>
+                <span id="score">0</span>
+            </div>
+            <div class="score-box">
+                <span class="score-label">Best:</span>
+                <span id="best">0</span>
+            </div>
+        </div>
+        <div class="game-container">
+            <div class="grid"></div>
+        </div>
+        <div class="controls">
+            <button class="control-btn up" data-direction="ArrowUp">↑</button>
+            <div class="horizontal-controls">
+                <button class="control-btn left" data-direction="ArrowLeft">←</button>
+                <button class="control-btn right" data-direction="ArrowRight">→</button>
+            </div>
+            <button class="control-btn down" data-direction="ArrowDown">↓</button>
+        </div>
+        <button id="new-game">New Game</button>
+        <div class="game-over hidden">
+            <h2>Game Over!</h2>
+            <p>Score: <span id="final-score">0</span></p>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
